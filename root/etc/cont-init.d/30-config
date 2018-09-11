@@ -1,5 +1,8 @@
 #!/usr/bin/with-contenv bash
 
+#create torrent group
+groupadd -g $TGID torrent
+
 # permissions
 chown -R abc:abc \
 	/app \
