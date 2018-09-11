@@ -3,6 +3,9 @@
 #create torrent group
 groupadd -g $TGID torrent
 
+#add user to torrent group
+gpasswd -a abc torrent
+
 # permissions
 chown -R abc:abc \
 	/app \
